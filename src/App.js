@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Weather app</p>    </header>
+        <footer>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/Ruta-B"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Ruta Baumane
         </a>
-      </header>
+        and is{" "}
+        <a
+          href="https://github.com/Ruta-B/real-w-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          open -sourced on github{" "}
+        </a>{" "}
+        and netlify.</footer>
+  
     </div>
   );
 }
