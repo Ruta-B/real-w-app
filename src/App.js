@@ -1,18 +1,19 @@
 import "./App.css";
+import Weather from "./Weather";
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Weather app</p>    </header>
-        <footer>
+      <Weather />
+      <footer>
         <a
           href="https://github.com/Ruta-B"
           target="_blank"
           rel="noopener noreferrer"
         >
           Ruta Baumane
-        </a>
+        </a>{" "}
         and is{" "}
         <a
           href="https://github.com/Ruta-B/real-w-app"
@@ -22,8 +23,8 @@ function App() {
           {" "}
           open -sourced on github{" "}
         </a>{" "}
-        and netlify.</footer>
-  
+        and netlify.
+      </footer>
     </div>
   );
 }
