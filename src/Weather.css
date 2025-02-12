@@ -1,0 +1,28 @@
+.Weather{
+    border: 1px solid #E7E9EB;
+    font-family: "Montserrat", serif;
+    color: rgb(16, 16, 50);
+    
+}
+.Weather form{
+    margin: 20px;
+}
+.Weather h1{
+    text-align: left;
+    margin: 20px 0 0 0;
+}
+.Weather ul{
+    text-align: left;
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+.Weather li{
+    list-style: none;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.Weather .temperature{
+    font-size: 90px;
+}
+
