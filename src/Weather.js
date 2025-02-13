@@ -61,15 +61,20 @@ export default function Weather() {
         </ul>
         <div className="row">
           <div className="col-6">
+            <div className="d-flex ">
+              <div>
             <img
               src={weatherData.icon_url}
               alt={weatherData.iconDescription}
               className="img-float "
-            />
-            <span className="temperature">
+                /></div>
+              <div>
+            <span className="temperature ">
               {Math.round(weatherData.temperature)}
             </span>
-            <span className="unit">°C</span>{" "}
+                <span className="unit">°C</span>{" "}
+                </div>
+            </div>
           </div>{" "}
           <div className="col-6">
             <ul>
