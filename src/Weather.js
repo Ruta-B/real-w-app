@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Time from "./Time";
 import "./Weather.css";
 
 export default function Weather() {
@@ -16,9 +17,8 @@ export default function Weather() {
       description: response.data.daily[0].condition.description,
       icon_url: response.data.daily[0].condition.icon_url,
       iconDescription: response.data.daily[0].condition.icon,
+      date: new Date(response.data.daily[0].time * 1000),
     });
-
-    
   }
 
   if (weatherData.ready) {
@@ -56,24 +56,27 @@ export default function Weather() {
           {weatherData.city}, {weatherData.country}
         </h1>
         <ul>
-          <li>Wednesday, 09:03</li>
+          <li>
+            <Time date={weatherData.date} />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row">
           <div className="col-6">
             <div className="d-flex ">
               <div>
-            <img
-              src={weatherData.icon_url}
-              alt={weatherData.iconDescription}
-              className="img-float "
-                /></div>
+                <img
+                  src={weatherData.icon_url}
+                  alt={weatherData.iconDescription}
+                  className="img-float "
+                />
+              </div>
               <div>
-            <span className="temperature ">
-              {Math.round(weatherData.temperature)}
-            </span>
+                <span className="temperature ">
+                  {Math.round(weatherData.temperature)}
+                </span>
                 <span className="unit">°C</span>{" "}
-                </div>
+              </div>
             </div>
           </div>{" "}
           <div className="col-6">
