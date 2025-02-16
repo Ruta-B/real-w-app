@@ -11,21 +11,21 @@ export default function Weather() {
     setWeatherData({
       ready: true,
       city: response.data.city,
-      temperature: response.data.daily[1].temperature.day,
+      temperature: response.data.temperature.current,
       country: response.data.country,
-      wind: response.data.daily[0].wind.speed,
-      humidity: response.data.daily[0].temperature.humidity,
-      description: response.data.daily[0].condition.description,
-      icon_url: response.data.daily[0].condition.icon_url,
-      iconDescription: response.data.daily[0].condition.icon,
-      date: new Date(response.data.daily[0].time * 1000),
+      wind: response.data.wind.speed,
+      humidity: response.data.temperature.humidity,
+      description: response.data.condition.description,
+      icon_url: response.data.condition.icon_url,
+      iconDescription: response.data.condition.icon,
+      date: new Date(response.data.time * 1000),
     });
   }
 
   function search() {
     const apiKey = "a7oe402d391da40bfcfe02337et07b50";
 
-    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
   function handleSubmit(event) {
