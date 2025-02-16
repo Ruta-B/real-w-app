@@ -1,0 +1,17 @@
+.main-temp{
+    border: 1px solid rgb(59, 59, 99);
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    background-color: rgb(59, 59, 99);
+    width: 300px;
+    margin: 10px 0 10px 30px;
+   
+    
+
+}
+.temperature, .unit{
+    color: white;
+
+}
