@@ -23,7 +23,15 @@ function App() {
             {" "}
             open -sourced on github{" "}
           </a>{" "}
-          and netlify.
+          and{" "}
+          <a
+            href="https://w-app-new.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            netlify
+          </a>
+          .
         </footer>
       </div>
     </div>

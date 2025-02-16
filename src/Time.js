@@ -13,7 +13,7 @@ export default function Time(props) {
   let day = days[props.date.getDay()];
   let hours = props.date.getHours();
   if (hours < 10) {
-    hours =`0${hours}`
+    hours = `0${hours}`;
   }
   let minutes = props.date.getMinutes();
   if (minutes < 10) {
@@ -21,7 +21,7 @@ export default function Time(props) {
   }
   return (
     <div>
-      {day},{hours}:{minutes}
+      {day}, {hours}:{minutes}
     </div>
   );
 }
