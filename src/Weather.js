@@ -11,6 +11,7 @@ export default function Weather() {
     console.log(response.data);
     setWeatherData({
       ready: true,
+      coordinates:response.data.coordinates,
       city: response.data.city,
       temperature: response.data.temperature.current,
       country: response.data.country,
@@ -63,7 +64,7 @@ export default function Weather() {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
