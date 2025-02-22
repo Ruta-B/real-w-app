@@ -2,11 +2,9 @@
   max-width: 900px;
   margin: 100px auto;
   font-family: "Montserrat", serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("./img/snowypic.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color:rgb(53, 136, 153);
   color: white;
- 
+ padding: 30px;
 }
 
 .App footer{
