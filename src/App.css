@@ -1,5 +1,5 @@
 .App {
-  max-width: 800px;
+  max-width: 900px;
   margin: 100px auto;
   font-family: "Montserrat", serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("./img/snowypic.jpg");
